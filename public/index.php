@@ -2,6 +2,10 @@
 
 // This is the main entry point for the app
 
+// ToDo: Log what the app is using a logger like Monolog
+// ToDo: Setup a filter to only allow data to be posted using an authorised key
+// ToDo: Add more input validation at the model layer
+
 require __DIR__ . '/../lib/autoload.php';
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -13,8 +17,6 @@ $router = new RouteCollector();
 
 // Define a route where feed data will be submitted to the app from the 3rd party aggregator
 $router->post('/feed/submit', ['\Controller\FeedEvents', 'process']);
-
-// ToDo: Setup a filter to only allow data to be posted using an authorised key
 
 // Setup a dispatcher
 $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());
