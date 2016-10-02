@@ -1,0 +1,8 @@
+[{
+  "type": "fixture",
+  "created_at": "2016-10-02T17:47:26+00:00",
+  "teams": ["Everton", "Liverpool"],
+  "location": "Goodison Park",
+  "kickoff": "2016-10-02T16:00:00+00:00",
+  "result": [5, 0]
+}]
