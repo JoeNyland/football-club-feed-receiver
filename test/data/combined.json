@@ -1,0 +1,56 @@
+[{
+  "type": "match_report",
+  "created_at": "2016-10-02T17:47:26+00:00",
+  "teams": ["Everton", "Liverpool"],
+  "location": "Goodison Park",
+  "kickoff": "2016-10-02T16:00:00+00:00",
+  "result": [5, 0],
+  "players": [
+    ["Player 1", "Player 12"],
+    ["Player 1", "Player 11"]
+  ],
+  "reports": [{
+    "type": "goal",
+    "player": "Player 1",
+    "scored_at": "2016-10-02T16:01:56+00:00"
+  }, {
+    "type": "card",
+    "color": "yellow",
+    "player": "Player 1",
+    "awarded_at": "2016-10-02T16:09:24+00:00"
+  }]
+}, {
+  "type": "match_report",
+  "created_at": "2016-10-02T17:47:26+00:00",
+  "teams": ["Everton", "Liverpool"],
+  "location": "Goodison Park",
+  "kickoff": "2016-10-02T16:00:00+00:00",
+  "result": [5, 0],
+  "players": [
+    ["Player 1", "Player 12"],
+    ["Player 1", "Player 11"]
+  ],
+  "reports": [{
+    "type": "goal",
+    "player": "Player 1",
+    "scored_at": "2016-10-02T16:01:56+00:00"
+  }, {
+    "type": "card",
+    "color": "yellow",
+    "player": "Player 1",
+    "awarded_at": "2016-10-02T16:09:24+00:00"
+  }]
+}, {
+  "type": "fixture",
+  "created_at": "2016-10-02T17:47:26+00:00",
+  "teams": ["Everton", "Liverpool"],
+  "location": "Goodison Park",
+  "kickoff": "2016-10-02T16:00:00+00:00",
+  "result": [5, 0]
+}, {
+  "type": "fixture",
+  "created_at": "2016-10-05T17:47:26+00:00",
+  "teams": ["Everton", "Liverpool"],
+  "location": "Goodison Park",
+  "kickoff": "2016-10-05T16:00:00+00:00"
+}]

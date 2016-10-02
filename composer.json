@@ -1,0 +1,14 @@
+{
+    "name": "masterroot24/football-club-feed-receiver",
+    "description": "Receives fixtures and match report data from a 3rd party aggregator",
+    "type": "project",
+    "require": {
+        "phroute/phroute": "2.1"
+    },
+    "authors": [
+        {
+            "name": "Joe Nyland",
+            "email": "joenyland@me.com"
+        }
+    ]
+}
