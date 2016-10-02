@@ -2,9 +2,12 @@
 
 Receives fixtures and match report data from a 3rd party aggregator.
 
-# Requirements:
+The app is designed to receive feed data on the endpoint `/feed/submit` using the HTTP `POST` method.
+
+## Requirements:
 * PHP 5.5
 * [Composer](https://getcomposer.org/download/)
+* `curl` (only required for testing/demo)
 
 ## Setup
 * Clone the repo
@@ -15,7 +18,21 @@ Receives fixtures and match report data from a 3rd party aggregator.
 * After setup, run `php -S localhost:8080 public/` to run the feed receiver
 
 ## Testing
-* The app is designed to receive feed data on the endpoint `/feed/submit` using the HTTP `POST` method.
+A selection of test requests have been created:
+* `test/data/combined.json`
+* `test/data/fixtures.json`
+* `test/data/match-reports.json`
+
+Each of the above files can be submitted to the app like so:
+```
+curl -X POST --data @test/data/combined.json localhost:8080/feed/submit
+curl -X POST --data @test/data/fixtures.json localhost:8080/feed/submit
+curl -X POST --data @test/data/match-reports.json localhost:8080/feed/submit
+```
+
+The app will log some basic information to the `error_log` when it's processing each event in the request.
+
+## Examples
 * An example of a fixture:
 ```
 [{
@@ -27,6 +44,7 @@ Receives fixtures and match report data from a 3rd party aggregator.
     "result": [5, 0]
 }]
 ```
+
 * An example of a match report:
 ```
 [{
@@ -51,10 +69,6 @@ Receives fixtures and match report data from a 3rd party aggregator.
         "awarded_at": "2016-10-02T16:09:24+00:00"
     }]
 }]
-```
-* For example, a fixture can be submitted like so:
-```
-curl -X POST --data '[{"type": "fixture", "created_at": "2016-10-02T17:47:26+00:00", "...": "..."}]' http://localhost:8080
 ```
 
 ## 3rd Party Libraries
