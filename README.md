@@ -4,6 +4,8 @@ Receives fixtures and match report data from a 3rd party aggregator.
 
 The app is designed to receive feed data on the endpoint `/feed/submit` using the HTTP `POST` method.
 
+Please note that this app is *not* yet completed. See the ToDo items in the code for the remaining tasks.
+
 ## Requirements:
 * PHP 5.5
 * [Composer](https://getcomposer.org/download/)
