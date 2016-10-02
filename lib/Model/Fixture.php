@@ -36,7 +36,7 @@ class Fixture {
         );
         $this->location = new Ground($fixture_data['location']);
         $this->kickoff = new \DateTime($fixture_data['kickoff']);
-        $this->result =  count($fixture_data['result']) === 2 && !is_null($fixture_data) ? $fixture_data['result'] : null;
+        $this->result = array_key_exists('result', $fixture_data) && count($fixture_data['result']) === 2 ? $fixture_data['result'] : null;
         return $this;
     }
 
