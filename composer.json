@@ -1,5 +1,5 @@
 {
-    "name": "masterroot24/football-club-feed-receiver",
+    "name": "joenyland/football-club-feed-receiver",
     "description": "Receives fixtures and match report data from a 3rd party aggregator",
     "type": "project",
     "require": {
