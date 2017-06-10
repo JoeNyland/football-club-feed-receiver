@@ -16,7 +16,7 @@ class DBI {
      */
     public function store_fixture(\Model\Fixture $fixture) {
         // ToDo: Complete this method
-        error_log('Storing a fixure');
+        error_log('Storing a fixture');
     }
 
     /**

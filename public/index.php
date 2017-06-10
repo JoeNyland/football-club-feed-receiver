@@ -2,7 +2,7 @@
 
 // This is the main entry point for the app
 
-// ToDo: Log what the app is using a logger like Monolog
+// ToDo: Log what the app is doing using a logger like Monolog
 // ToDo: Setup a filter to only allow data to be posted using an authorised key
 // ToDo: Add more input validation at the model layer
 
