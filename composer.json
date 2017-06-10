@@ -3,6 +3,7 @@
     "description": "Receives fixtures and match report data from a 3rd party aggregator",
     "type": "project",
     "require": {
+        "php": "^5.5",
         "phroute/phroute": "^2.1"
     },
     "authors": [

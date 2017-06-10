@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "705b1f9fb843a5c094a057555b63dcb3",
+    "content-hash": "c097cf3602c8b143e538ddc9d547dfb0",
     "packages": [
         {
             "name": "phroute/phroute",
@@ -48,7 +48,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2015-07-22T20:46:43+00:00"
+            "time": "2015-07-22 20:46:43"
         }
     ],
     "packages-dev": [],
@@ -57,6 +57,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^5.5"
+    },
     "platform-dev": []
 }
